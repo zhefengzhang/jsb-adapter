@@ -72,6 +72,21 @@ const GL_COMPRESSED_RGB_ETC1_WEBGL = 0x8D64; // ext.COMPRESSED_RGB_ETC1_WEBGL
 const GL_COMPRESSED_RGB8_ETC2 = 0x9274;       // ext.COMPRESSED_RGB8_ETC2
 const GL_COMPRESSED_RGBA8_ETC2_EAC = 0x9278;  // ext.COMPRESSED_RGBA8_ETC2_EAC
 
+const GL_COMPRESSED_RGBA_ASTC_4x4_KHR = 0x93B0;
+const GL_COMPRESSED_RGBA_ASTC_5x4_KHR = 0x93B1;
+const GL_COMPRESSED_RGBA_ASTC_5x5_KHR = 0x93B2;
+const GL_COMPRESSED_RGBA_ASTC_6x5_KHR = 0x93B3;
+const GL_COMPRESSED_RGBA_ASTC_6x6_KHR = 0x93B4;
+const GL_COMPRESSED_RGBA_ASTC_8x5_KHR = 0x93B5;
+const GL_COMPRESSED_RGBA_ASTC_8x6_KHR = 0x93B6;
+const GL_COMPRESSED_RGBA_ASTC_8x8_KHR = 0x93B7;
+const GL_COMPRESSED_RGBA_ASTC_10x5_KHR = 0x93B8;
+const GL_COMPRESSED_RGBA_ASTC_10x6_KHR = 0x93B9;
+const GL_COMPRESSED_RGBA_ASTC_10x8_KHR = 0x93BA;
+const GL_COMPRESSED_RGBA_ASTC_10x10_KHR = 0x93BB;
+const GL_COMPRESSED_RGBA_ASTC_12x10_KHR = 0x93BC;
+const GL_COMPRESSED_RGBA_ASTC_12x12_KHR = 0x93BD;
+
 const _filterGL = [
   [ GL_NEAREST,  GL_NEAREST_MIPMAP_NEAREST, GL_NEAREST_MIPMAP_LINEAR ],
   [ GL_LINEAR,  GL_LINEAR_MIPMAP_NEAREST, GL_LINEAR_MIPMAP_LINEAR ],
@@ -167,6 +182,34 @@ const _textureFmtGL = [
 
   // TEXTURE_FMT_RGBA_ETC2: 29
   { format: GL_RGBA, internalFormat: GL_COMPRESSED_RGBA8_ETC2_EAC, pixelType: null },
+
+  { format: GL_RGBA, internalFormat: GL_COMPRESSED_RGBA_ASTC_4x4_KHR, pixelType: null }, // 30
+
+  { format: GL_RGBA, internalFormat: GL_COMPRESSED_RGBA_ASTC_5x4_KHR, pixelType: null }, // 31
+
+  { format: GL_RGBA, internalFormat: GL_COMPRESSED_RGBA_ASTC_5x5_KHR, pixelType: null }, // 32
+
+  { format: GL_RGBA, internalFormat: GL_COMPRESSED_RGBA_ASTC_6x5_KHR, pixelType: null }, // 33
+
+  { format: GL_RGBA, internalFormat: GL_COMPRESSED_RGBA_ASTC_6x6_KHR, pixelType: null }, // 34
+
+  { format: GL_RGBA, internalFormat: GL_COMPRESSED_RGBA_ASTC_8x5_KHR, pixelType: null }, // 35
+
+  { format: GL_RGBA, internalFormat: GL_COMPRESSED_RGBA_ASTC_8x6_KHR, pixelType: null }, // 36
+
+  { format: GL_RGBA, internalFormat: GL_COMPRESSED_RGBA_ASTC_8x8_KHR, pixelType: null }, // 37
+
+  { format: GL_RGBA, internalFormat: GL_COMPRESSED_RGBA_ASTC_10x5_KHR, pixelType: null }, // 38
+
+  { format: GL_RGBA, internalFormat: GL_COMPRESSED_RGBA_ASTC_10x6_KHR, pixelType: null }, // 39
+
+  { format: GL_RGBA, internalFormat: GL_COMPRESSED_RGBA_ASTC_10x8_KHR, pixelType: null }, // 40
+
+  { format: GL_RGBA, internalFormat: GL_COMPRESSED_RGBA_ASTC_10x10_KHR, pixelType: null }, // 41
+
+  { format: GL_RGBA, internalFormat: GL_COMPRESSED_RGBA_ASTC_12x10_KHR, pixelType: null }, // 42
+
+  { format: GL_RGBA, internalFormat: GL_COMPRESSED_RGBA_ASTC_12x12_KHR, pixelType: null }  // 43
 ];
 
 /**
